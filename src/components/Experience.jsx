@@ -9,6 +9,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import './GenButton.css';
 
 const ExperienceCard = ({ experience }) => {
   // State to track the selected option
@@ -62,14 +63,14 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}> */}
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Select the following
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience
+          PARAMETERS
         </h2>
-      </motion.div>
+      {/* </motion.div> */}
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
@@ -85,4 +86,5 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+// export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "parameters");
