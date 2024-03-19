@@ -116,56 +116,61 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Equipment Condition",
     company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    Pearson_correlation: "Pearson correlation - 0.283",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: [
+        "Equipment is old, worn-out, or in poor condition, requiring frequent repairs.",
+        "Equipment is functional but may have minor issues or signs of wear.",
+        "Equipment is in average condition, maintained regularly, and operates reliably.",
+        "Equipment is well-maintained, relatively new, and operates smoothly.",
+        "Equipment is brand new, state-of-the-art, and in pristine condition."
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Number of Equipment",
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    Pearson_correlation: "Pearson correlation - 0.283",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Very few pieces of equipment available, causing delays and inefficiencies.",
+      "Limited number of equipment, which may require careful scheduling and management.",
+      "Moderate number of equipment, sufficient for regular operations.",
+      "Adequate number of equipment, ensuring smooth workflow and productivity.",
+      "Abundant equipment resources, allowing for flexibility and scalability."
     ],
   },
   {
-    title: "Web Developer",
+    title: "Equipment Service Time",
     company_name: "Shopify",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    Pearson_correlation: "Pearson correlation - 0.283",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Equipment has been in service for many years, nearing the end of its usable life.",
+      "Equipment has been in service for several years but is still operational.",
+      "Equipment has moderate service time, with regular maintenance and occasional repairs.",
+      "Equipment is relatively new, with minimal service time and few maintenance issues.",
+      "Equipment is brand new, with no service time and no history of maintenance or repairs."
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Materials quantity",
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    Pearson_correlation: "Pearson correlation - 0.283",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Insufficient quantity of materials, causing delays and interruptions in work.",
+      "Limited quantity of materials, requiring careful management to avoid shortages.",
+      "Adequate quantity of materials for ongoing work without major interruptions.",
+      "Sufficient quantity of materials, allowing for smooth and continuous progress.",
+      "Abundant quantity of materials, providing a surplus for unexpected demands."
+      ],
   },
 ];
 
