@@ -58,7 +58,7 @@ const LineChart = () => {
 
   return (
       // <div className='flex items-center justify-between w-full lg:h-[400px]' >
-      <div className='flex items-center justify-between w-full lg:h-[400px] px-5 my-12' >
+      <div className='flex items-center justify-between w-full h-[400px] px-5 my-12' >
         <Line data={data} options={options} />
       </div>    
   );

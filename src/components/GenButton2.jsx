@@ -26,74 +26,28 @@ const ServiceCard = ({ index, title, value }) => (
   </Tilt>
 );
 
-// const GenButton2 = () => {
-//   // Initial state setup for all service cards
-//   const [productivityValues, setProductivityValues] = useState(
-//     productivitys.map((productivity) => ({
-//       ...productivity,
-//       value: productivity.defaultValue, // Using a new 'value' property to reflect dynamic changes
-//     }))
-//   );
-
-//   const handleButtonClick = () => {
-//     // Update each card's 'value' to be the average of 'lowercap' and 'uppercap'
-//     const updatedValues = productivityValues.map((productivity) => ({
-//       ...productivity,
-//       value: ((productivity.lowercap + productivity.uppercap) / 2).toFixed(2), // Assuming lowercap and uppercap are numbers
-//     }));
-//     setProductivityValues(updatedValues);
-//   };
-
-//   return (
-//     <>
-//       <motion.div variants={textVariant()}>
-//         <div className="flex flex-col items-center justify-center my-10">
-//           <button
-//             onClick={handleButtonClick}
-//             className="btn mb-5 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-//             style={{ borderRadius: '14px 50px' }}
-//           >
-//             CLICK HERE TO GENERATE LABOUR PRODUCTIVITY
-//           </button>
-//         </div>
-//       </motion.div>
-
-//       <div className='mt-20 flex flex-wrap gap-10'>
-//         {productivityValues.map((productivity, index) => (
-//           <ServiceCard 
-//             key={productivity.title} 
-//             index={index} 
-//             title={productivity.title} 
-//             value={productivity.value} 
-//           />
-//         ))}
-//       </div>
-//     </>
-//   );
-// };
-
-// export default SectionWrapper(GenButton2, "result");
-
 const GenButton2 = () => {
-  // Initial state setup for all service cards
   const [productivityValues, setProductivityValues] = useState(
     productivitys.map((productivity) => ({
       ...productivity,
-      value: productivity.defaultValue, // Using a new 'value' property to reflect dynamic changes
+      value: productivity.defaultValue, 
     }))
   );
 
-  const handleButtonClick = () => {
-    // Update each card's 'value' incrementally
-    productivityValues.forEach((productivity, index) => {
-      setTimeout(() => {
-        const updatedValue = ((productivity.lowercap + productivity.uppercap) / 2).toFixed(2);
-        const updatedValues = [...productivityValues];
-        updatedValues[index].value = updatedValue;
-        setProductivityValues(updatedValues);
-      }, index * 500); // Increase the timeout duration for each card
-    });
-  };
+const handleButtonClick = () => {
+  productivityValues.forEach((productivity, index) => {
+    setTimeout(() => {
+      // Generates a random number between 1 to 2
+      const randomMultiplier = 0.8 + Math.random() * 0.4; // Math.random() generates a number between 0 and 1, so adding 1 ensures the range is between 1 and 2.
+      // Calculate the average and multiply by the random number, then format
+      const updatedValue = (((productivity.lowercap + productivity.uppercap) / 2) * randomMultiplier).toFixed(2);
+      const updatedValues = [...productivityValues];
+      updatedValues[index].value = updatedValue; // Update the value with the new calculation
+      setProductivityValues(updatedValues); // Update state with the new values
+    }, index * 500); // Delay to stagger the updates for visual effect
+  });
+};
+
 
   return (
     <>
