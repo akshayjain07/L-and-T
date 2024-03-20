@@ -5,6 +5,7 @@ import GenButton from "./components/GenButton";
 import GenButton2 from "./components/GenButton2";
 import LineChart from "./components/lineChart";
 import PieChart from "./components/PieChart";
+import AnalysisCharts from "./components/AnalysisCharts";
 
 const App = () => {
   return (
@@ -18,8 +19,9 @@ const App = () => {
         <Experience />
         {/* <GenButton/> */}
         <GenButton2/>
-        <LineChart/>
-        <PieChart/>
+        <AnalysisCharts/>
+        {/* <LineChart/> */}
+        {/* <PieChart/> */}
         {/* <Tech /> */}
         {/* <Works /> */}
         {/* <Feedbacks /> */}

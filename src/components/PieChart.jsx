@@ -45,10 +45,11 @@ const PieChart = () => {
   };
 
   return (
-    <div className='w-full lg:w-2/5 lg:h-[400px]' >
+    <div className='flex items-center justify-center w-full lg:h-[400px] sm:mt-12' >
         <Pie data={data} options={options} />
     </div>
   );
 };
 
-export default SectionWrapper(PieChart, "");
+// export default SectionWrapper(PieChart, "");
+export default PieChart;

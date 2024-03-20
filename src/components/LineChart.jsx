@@ -57,10 +57,11 @@ const LineChart = () => {
   };
 
   return (
-      <div className='flex items-center justify-between w-full lg:w-2/5 lg:h-[400px]' >
+      <div className='flex items-center justify-between w-full lg:h-[400px]' >
         <Line data={data} options={options} />
       </div>    
   );
 };
 
-export default SectionWrapper(LineChart, "analysis");
+export default LineChart;
+// export default SectionWrapper(LineChart, "analysis");
