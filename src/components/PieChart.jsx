@@ -5,7 +5,8 @@ import 'chart.js/auto'; // This imports necessary parts of Chart.js for the pie 
 
 const PieChart = () => {
   const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['IT', 'Work Space', 'Work Continuity', 'Crew Composition', 'Work Method', 'Other'],
+    // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [
       {
         label: '# of Votes',
@@ -39,13 +40,14 @@ const PieChart = () => {
       },
       title: {
         display: true,
-        text: 'Pie Chart Example',
+        text: 'Top factors influencing labour productivity',
       },
     },
   };
 
   return (
-    <div className='flex items-center justify-center w-full lg:h-[400px] sm:mt-12' >
+    <div className='flex items-center justify-center w-full lg:h-[400px]' >
+    {/* <div className='flex items-center justify-center w-full lg:h-[400px] sm:mt-12' > */}
         <Pie data={data} options={options} />
     </div>
   );
