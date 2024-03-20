@@ -40,13 +40,13 @@ const PieChart = () => {
       },
       title: {
         display: true,
-        text: 'Top factors influencing labour productivity',
+        text: 'Weightage of factors influencing labour productivity',
       },
     },
   };
 
   return (
-    <div className='flex items-center justify-center w-full lg:h-[400px]' >
+    <div className='flex items-center justify-center w-full lg:h-[400px] sm:mb-12' >
     {/* <div className='flex items-center justify-center w-full lg:h-[400px] sm:mt-12' > */}
         <Pie data={data} options={options} />
     </div>

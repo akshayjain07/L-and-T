@@ -5,11 +5,11 @@ import 'chart.js/auto';
 
 const LineChart = () => {
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    labels: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
     datasets: [
       {
         label: 'Time (in months) vs Labours (numbers)',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [20, 17, 14, 11, 9, 7, 6, 5, 4, 2, 0],
         fill: false,
         backgroundColor: 'rgb(75, 192, 192)',
         borderColor: 'rgba(75, 192, 192, 0.2)',
