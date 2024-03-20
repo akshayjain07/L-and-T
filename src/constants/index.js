@@ -35,6 +35,10 @@ export const navLinks = [
     title: "Result",
   },
   {
+    id: "analysis",
+    title: "Analysis",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,19 +46,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Information Technology",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Crew Composition",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Worker Experience",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Construction Plan",
     icon: creator,
   },
 ];
@@ -62,24 +66,33 @@ const services = [
 const productivitys = [
   {
     title: "Number of Bricks laid in a Day",
-    icon:"0.0",
+    defaultValue:0.0,
+    lowercap:400,
+    uppercap:500,
     // productivity:"456.7",
     // 400-500 bricks in a day 
   },
   {
     title: "KGs of steel reinforcement bars in a day",
-    icon:"0.0",
+    defaultValue:0.0,
+    lowercap:100,
+    uppercap:200,
     // productivity:"135.8",
     // 100 to 200 kg of steel reinforcement bars in a day
   },
   {
     title: "Cubic meters of concrete per day",
-    icon:"0.0",
+    defaultValue:0.0,
+    lowercap:5,
+    uppercap:8,
     // 5 to 8 cubic meters of concrete per day
   },
   {
     title: "Square meters of formwork per day",
-    icon:"0.0",
+    defaultValue:0.0,
+    lowercap:20,
+    uppercap:30,
+    // 20 to 30 square meters of formwork per day 
   },
 ];
 

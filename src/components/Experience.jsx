@@ -9,7 +9,8 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import './GenButton.css';
+// import './Experience.css';
+// import './GenButton.css';
 
 const ExperienceCard = ({ experience }) => {
   // State to track the selected option
@@ -40,13 +41,14 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.options.map((option, index) => (
           <li key={index} className="flex items-center">
             <input
-              type="checkbox"
-              id={`option-${experience.title.replaceAll(" ", "_")}-${index}`} // Unique ID for each checkbox
-              className="checkbox checkbox-primary"
+              type="radio" // Change to "radio" for radio button behavior
+              id={`option-${experience.title.replaceAll(" ", "_")}-${index}`} // Unique ID
+              className="mr-5" // Custom class for styling
               checked={selectedOption === option}
               onChange={() => handleOptionChange(option)}
             />

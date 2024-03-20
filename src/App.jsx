@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import GenButton from "./components/GenButton";
 import GenButton2 from "./components/GenButton2";
+import LineChart from "./components/lineChart";
+import PieChart from "./components/PieChart";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Experience />
         {/* <GenButton/> */}
         <GenButton2/>
+        <LineChart/>
+        <PieChart/>
         {/* <Tech /> */}
         {/* <Works /> */}
         {/* <Feedbacks /> */}
