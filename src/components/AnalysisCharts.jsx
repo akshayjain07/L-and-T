@@ -8,7 +8,6 @@ import { styles } from "../styles";
 import LineChart2 from './LineChart2';
 import Buttons2 from './Buttons2';
 import Buttons from './buttons';
-
 const AnalysisCharts = () => {
   return (
     <div>
