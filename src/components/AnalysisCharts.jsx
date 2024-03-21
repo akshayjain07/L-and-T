@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import LineChart2 from './LineChart2';
 import Buttons2 from './Buttons2';
-import Buttons from './buttons';
+import Buttons3 from './Buttons3';
 const AnalysisCharts = () => {
   return (
     <div>
@@ -35,7 +35,7 @@ const AnalysisCharts = () => {
           <LineChart2 />
         </div>
         <div className="lg:w-1/2">
-          <Buttons/>
+          <Buttons3/>
         </div>
       </div>
       

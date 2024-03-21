@@ -26,7 +26,7 @@ const btnTitle = [
   'Work Delay', 'Safety', 'Work Environment', 'Worker Experience', 'Work Difficulty', 'Work Quantity'
 ];
 
-const Buttons = () => {
+const Buttons3 = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-5">
       {backgroundColors.map((bgColor, index) => (
@@ -42,4 +42,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons;
+export default Buttons3;
