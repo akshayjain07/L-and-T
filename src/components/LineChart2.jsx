@@ -3,13 +3,13 @@ import { Line } from 'react-chartjs-2';
 import { SectionWrapper } from "../hoc";
 import 'chart.js/auto';
 
-const LineChart = () => {
+const LineChart2 = () => {
   const data = {
     labels: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
     datasets: [
       {
-        label: 'Time (in months) vs Labours (numbers)',
-        data: [20, 19, 18, 16, 14, 11, 8, 5, 4, 2, 0],
+        label: 'Work Delay (in months) vs Productivity (numbers)',
+        data: [20, 17, 14, 11, 9, 7, 6, 5, 4, 2, 0],
         fill: false,
         backgroundColor: 'rgb(75, 192, 192)',
         borderColor: 'rgba(75, 192, 192, 0.2)',
@@ -23,13 +23,13 @@ const LineChart = () => {
         beginAtZero: true,
         title: {
           display: true,
-          text: 'Labours (in numbers)',
+          text: 'Productivity (in numbers)',
         },
       },
       x: {
         title: {
           display: true,
-          text: 'Time (in months)',
+          text: 'Work Delay (in months)',
         },
       },
     },
@@ -39,7 +39,7 @@ const LineChart = () => {
       },
       title: {
         display: true,
-        text: 'Time and Labour Project Estimation',
+        text: 'Work Delay and Productivity Estimation',
       },
       annotation: {
         annotations: {
@@ -64,5 +64,5 @@ const LineChart = () => {
   );
 };
 
-export default LineChart;
+export default LineChart2;
 // export default SectionWrapper(LineChart, "analysis");

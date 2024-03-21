@@ -5,6 +5,9 @@ import BarChart from './BarChart';
 import LineChart from './LineChart';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import Buttons from './buttons';
+import LineChart2 from './LineChart2';
+import Buttons2 from './Buttons2';
 
 const AnalysisCharts = () => {
   return (
@@ -21,13 +24,32 @@ const AnalysisCharts = () => {
       </div>
       <div className="mx-5 flex flex-col lg:flex-row justify-center items-center lg:space-x-8 ">
         <div className="lg:w-1/2">
-          <LineChart />
+          <BarChart />
         </div>
         <div className="lg:w-1/2">
           <PieChart />
         </div>
       </div>
-      <div><BarChart/> </div>
+
+      <div className="mx-5 flex flex-col lg:flex-row justify-center items-center lg:space-x-8 ">
+        <div className="lg:w-1/2">
+          <LineChart2 />
+        </div>
+        <div className="lg:w-1/2">
+          <Buttons />
+        </div>
+      </div>
+      
+      <div className="mx-5 flex flex-col lg:flex-row justify-center items-center lg:space-x-8 ">
+        <div className="lg:w-1/2">
+          <LineChart />
+        </div>
+        <div className="lg:w-1/2">
+          <Buttons2 />
+        </div>
+      </div>
+
+
     </div>
   )
 }
