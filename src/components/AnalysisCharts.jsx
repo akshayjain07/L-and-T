@@ -5,9 +5,9 @@ import BarChart from './BarChart';
 import LineChart from './LineChart';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import Buttons from './buttons';
 import LineChart2 from './LineChart2';
 import Buttons2 from './Buttons2';
+import Buttons from './buttons';
 
 const AnalysisCharts = () => {
   return (
@@ -36,7 +36,7 @@ const AnalysisCharts = () => {
           <LineChart2 />
         </div>
         <div className="lg:w-1/2">
-          <Buttons />
+          <Buttons/>
         </div>
       </div>
       
