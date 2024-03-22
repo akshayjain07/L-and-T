@@ -7,7 +7,7 @@ const borderColors = [
   'rgba(255, 99, 132, 1)',
 ];
 
-const Buttons2 = () => {
+const Buttons2 = ({onSubmit}) => {
   const [numLabours, setNumLabours] = useState('');
   const [numArea, setNumArea] = useState('');
   const [output, setOutput] = useState('0 Months'); // Set default value to "0 Months"
@@ -26,6 +26,8 @@ const Buttons2 = () => {
     const estimateTime = (parseFloat(numLabours) * 0.78).toFixed(1);
     // Set the output with one decimal place
     setOutput(`${estimateTime} Months`);
+    onSubmit(); // Invoke the onSubmit callback
+    console.log("I am submitted !!");
   };
 
   return (
@@ -56,7 +58,7 @@ const Buttons2 = () => {
           </button>
         ))}
       </form>
-      <div className="text-white bg-gray-800 py-2 px-4 rounded-lg shadow-md">
+      <div className="text-white bg-gray-800 py-2 px-4 rounded-lg shadow-md ">
         {output}
       </div>
     </div>

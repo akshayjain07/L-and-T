@@ -27,6 +27,7 @@ const ServiceCard = ({ index, title, value }) => (
 );
 
 const GenButton2 = () => {
+  
   const [productivityValues, setProductivityValues] = useState(
     productivitys.map((productivity) => ({
       ...productivity,
@@ -34,19 +35,24 @@ const GenButton2 = () => {
     }))
   );
 
-const handleButtonClick = () => {
-  productivityValues.forEach((productivity, index) => {
-    setTimeout(() => {
-      // Generates a random number between 1 to 2
-      const randomMultiplier = 0.8 + Math.random() * 0.4; // Math.random() generates a number between 0 and 1, so adding 1 ensures the range is between 1 and 2.
-      // Calculate the average and multiply by the random number, then format
-      const updatedValue = (((productivity.lowercap + productivity.uppercap) / 2) * randomMultiplier).toFixed(2);
-      const updatedValues = [...productivityValues];
-      updatedValues[index].value = updatedValue; // Update the value with the new calculation
-      setProductivityValues(updatedValues); // Update state with the new values
-    }, index * 500); // Delay to stagger the updates for visual effect
-  });
-};
+  const [output, setOutput] = useState('0');
+
+  const handleButtonClick = () => {
+    const randomProductivityValue = (50 + Math.random() * 30).toFixed(2);
+    setOutput(randomProductivityValue);
+    productivityValues.forEach((productivity, index) => {
+      setTimeout(() => {
+        // Generates a random number between 1 to 2
+        const randomMultiplier = 0.8 + Math.random() * 0.4; // Math.random() generates a number between 0 and 1, so adding 1 ensures the range is between 1 and 2.
+        // Calculate the average and multiply by the random number, then format
+        // const updatedValue = (((productivity.lowercap + productivity.uppercap) / 2) * randomMultiplier).toFixed(2);
+        const updatedValue = ((productivity.lowercap + (productivity.uppercap-productivity.lowercap)*randomProductivityValue/100)).toFixed(2);
+        const updatedValues = [...productivityValues];
+        updatedValues[index].value = updatedValue; // Update the value with the new calculation
+        setProductivityValues(updatedValues); // Update state with the new values
+      }, index * 500); // Delay to stagger the updates for visual effect
+    });
+  };
 
 
   return (
@@ -60,6 +66,9 @@ const handleButtonClick = () => {
           >
             CLICK HERE TO GENERATE LABOUR PRODUCTIVITY
           </button>
+        <div className="text-white bg-gray-800 py-2 px-4 rounded-lg shadow-md mx-96">
+          Labour Productivity Value : {output} / 100
+        </div>
         </div>
       </motion.div>
 

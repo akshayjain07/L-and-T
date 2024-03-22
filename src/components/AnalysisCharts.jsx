@@ -12,10 +12,19 @@ import Buttons3 from './Buttons3';
 const AnalysisCharts = () => {
 
   // prop for buttons 
-  const [selectedButton, setSelectedButton] = useState(null); // State to hold selected button
+  const [selectedButton, setSelectedButton] = useState('Parameter'); // State to hold selected button
 
-  const handleButtonClick = (btnTitle) => {
+  const handleButtonsClick = (btnTitle) => {
     setSelectedButton(btnTitle); // Update state with selected button
+  };
+
+  // prop for button 
+  const [clicked, setClicked] = useState(false);
+
+  const handleButtonClick = (isClicked) => {
+    console.log(clicked);
+    setClicked(true); // Handle the clicked prop as needed
+    console.log(clicked);
   };
 
   return (
@@ -42,16 +51,16 @@ const AnalysisCharts = () => {
           <LineChart2 selectedButton={selectedButton} /> {/* Pass selectedButton as prop */}
         </div>
         <div className="lg:w-1/2">
-          <Buttons3 onButtonClick={handleButtonClick} /> {/* Pass handleButtonClick as prop */}
+          <Buttons3 onButtonClick={handleButtonsClick} /> {/* Pass handleButtonClick as prop */}
         </div>
       </div>
       
       <div className="mx-5 flex flex-col lg:flex-row justify-center items-center lg:space-x-8 ">
         <div className="lg:w-1/2">
-          <LineChart />
+          <LineChart clicked={clicked}/>
         </div>
         <div className="lg:w-1/2">
-          <Buttons2 />
+          <Buttons2 onSubmit={handleButtonClick}/>
         </div>
       </div>
     </div>

@@ -1,77 +1,7 @@
-// import React from 'react';
-// import { Line } from 'react-chartjs-2';
-// import { SectionWrapper } from "../hoc";
-// import 'chart.js/auto';
-// // import { lineChart2Labels } from '../constants';
-
-// const LineChart2 = ({selectedButton}) => {
-
-//   const data = {
-//     labels: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
-//     datasets: [
-//       {
-//         label: `${selectedButton} vs Productivity`,
-//         data: [20, 17, 14, 11, 9, 7, 6, 5, 4, 2, 0],
-//         fill: false,
-//         backgroundColor: 'rgb(75, 192, 192)',
-//         borderColor: 'rgba(75, 192, 192, 0.2)',
-//       },
-//     ],
-//   };
-
-
-//   const options = {
-//     scales: {
-//       y: {
-//         beginAtZero: true,
-//         title: {
-//           display: true,
-//           text: 'Productivity (in numbers)',
-//         },
-//       },
-//       x: {
-//         title: {
-//           display: true,
-//           text: selectedButton ,
-//         },
-//       },
-//     },
-//     plugins: {
-//       legend: {
-//         display: true,
-//       },
-//       title: {
-//         display: true,
-//         text: `${selectedButton} and Productivity Estimation`,
-//       },
-//       annotation: {
-//         annotations: {
-//           point1: {
-//             type: 'point',
-//             xValue: 2,
-//             yValue: 3,
-//             backgroundColor: 'red',
-//             radius: 10,
-//           },
-//         },
-//       },
-//     },
-//     maintainAspectRatio: false,
-//   };
-
-//   return (
-//       <div className='flex items-center justify-between w-full h-[400px] px-5 my-12' >
-//         <Line data={data} options={options} />
-//       </div>    
-//   );
-// };
-
-// export default LineChart2;
-
-
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
+import { btns } from '../constants';
 
 const generateRandomData = () => {
   // Define possible arrays

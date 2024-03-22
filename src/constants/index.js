@@ -155,62 +155,74 @@ const btns = [
   {
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
     borderColor: 'rgba(255, 99, 132, 1)',
-    btnTitle: 'IT'
+    btnTitle: 'IT',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
     borderColor: 'rgba(54, 162, 235, 1)',
-    btnTitle: 'Work Space'
+    btnTitle: 'Work Space',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(153, 102, 255, 0.2)',
     borderColor: 'rgba(153, 102, 255, 1)',
-    btnTitle: 'Work Continuity'
+    btnTitle: 'Work Continuity',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(255, 159, 64, 0.2)',
     borderColor: 'rgba(255, 159, 64, 1)',
-    btnTitle: 'Crew Composition'
+    btnTitle: 'Crew Composition',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(75, 192, 192, 0.2)',
     borderColor: 'rgba(75, 192, 192, 1)',
-    btnTitle: 'Work Method'
+    btnTitle: 'Work Method',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(255, 206, 86, 0.2)',
     borderColor: 'rgba(255, 206, 86, 1)',
-    btnTitle: 'Rework'
+    btnTitle: 'Rework',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(255, 99, 224, 0.2)',
     borderColor: 'rgba(255, 99, 224, 1)',
-    btnTitle: 'Work Delay'
+    btnTitle: 'Work Delay',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(54, 162, 135, 0.2)',
     borderColor: 'rgba(54, 162, 135, 1)',
-    btnTitle: 'Safety'
+    btnTitle: 'Safety',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(153, 108, 255, 0.2)',
     borderColor: 'rgba(153, 108, 255, 1)',
-    btnTitle: 'Work Environment'
+    btnTitle: 'Work Environment',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(255, 164, 64, 0.2)',
     borderColor: 'rgba(255, 164, 64, 1)',
-    btnTitle: 'Worker Experience'
+    btnTitle: 'Worker Experience',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(67, 192, 192, 0.2)',
     borderColor: 'rgba(67, 192, 192, 1)',
-    btnTitle: 'Work Difficulty'
+    btnTitle: 'Work Difficulty',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
   {
     backgroundColor: 'rgba(255, 209, 102, 0.2)',
     borderColor: 'rgba(255, 209, 102, 1)',
-    btnTitle: 'Work Quantity'
+    btnTitle: 'Work Quantity',
+    arr: ['0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20'],
   },
 ];
 
@@ -274,6 +286,73 @@ const lineChart2Labels = [
 
 
 const experiences = [
+  {
+    title: "Worker Experience",
+    company_name: "Tesla",
+    icon: creator,
+    iconBg: "#E6DEDD",
+    Pearson_correlation: "Pearson correlation - 0.445",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Workers have minimal experience in their roles, with little knowledge of job tasks and procedures.",
+      "Workers have some experience, but they are still relatively new to their roles and require guidance.",
+      "Workers have moderate experience, having performed similar tasks for a few years with some proficiency.",
+      "Workers have extensive experience in their roles, with several years of practical experience and a deep understanding of job requirements.",
+      "Workers are highly experienced veterans, with decades of experience and a wealth of knowledge in their field."
+    ],
+  },
+  {
+    title: "Worker Health",
+    company_name: "Starbucks",
+    icon: mobile,
+    iconBg: "#383E56",
+    Pearson_correlation: "Pearson correlation - 0.289",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Workers suffer from frequent health issues, leading to absenteeism and reduced productivity.",
+      "Workers have occasional health problems, requiring sick leave and medical attention.",
+      "Workers maintain average health, with minor ailments that do not significantly impact work.",
+      "Workers enjoy good health, with few or no medical issues affecting their performance.",
+      "Workers are in excellent health, maintaining peak physical and mental fitness for optimal productivity."
+    ],
+  },
+  {
+    title: "Information Technology",
+    company_name: "Starbucks",
+    icon: mobile,
+    iconBg: "#383E56",
+    Pearson_correlation: "Pearson correlation - 0.604",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Limited or outdated IT infrastructure and systems, hindering communication, data management, and project coordination.",
+                               "Basic IT tools and technologies utilized, but with gaps or inefficiencies that impede workflow integration, collaboration, or decision-making.",
+                               "Adequate IT resources available, supporting essential functions such as document management, communication, and data analysis to facilitate project execution.",
+                               "Advanced IT solutions deployed, including project management software, BIM (Building Information Modeling), and IoT (Internet of Things) technologies for enhanced efficiency, transparency, and collaboration.",
+                               "Cutting-edge IT capabilities leveraged, with state-of-the-art digital platforms, AI (Artificial Intelligence), and cloud computing driving innovation, automation, and optimization across all aspects of the construction project."]
+  },
+  {
+    title: "Crew Composition",
+    company_name: "Tesla",
+    icon: creator,
+    iconBg: "#E6DEDD",
+    Pearson_correlation: "Pearson correlation - 0.515",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Inadequate crew composition, with shortages of skilled workers, inexperienced personnel, or poor coordination among team members.",
+                         "Suboptimal crew composition, with a mismatch of skills, personalities, or roles within the team, leading to inefficiencies or conflicts.",
+                         "Balanced crew composition, with a diverse mix of skills, experience levels, and personalities that complement each other and support teamwork.",
+                         "Well-organized crew composition, with clearly defined roles, responsibilities, and leadership structures fostering effective collaboration and communication.",
+                         "Optimal crew composition, with a cohesive, highly skilled team that works synergistically to achieve project goals efficiently and effectively."],
+  },
+  {
+    title: "Construction Plan",
+    company_name: "Meta",
+    icon: web,
+    iconBg: "#E6DEDD",
+    Pearson_correlation: "Pearson correlation - 0.388",
+    Significance_two_tailed: "Significance (two-tailed) - 0.033",
+    options: ["Inadequate or incomplete construction plan, lacking detailed specifications, timelines, or resource allocation.",
+                          "Basic construction plan in place, but with some gaps or ambiguities that require clarification or adjustment during execution.",
+                          "Well-developed construction plan, outlining clear objectives, milestones, and requirements to guide project implementation effectively.",
+                          "Comprehensive construction plan, incorporating thorough risk assessments, contingency plans, and stakeholder input for optimal project management.",
+                          "Exceptional construction plan, featuring meticulous planning, innovative strategies, and alignment with project goals to ensure success and efficiency."],
+  },
   {
     title: "Equipment Condition",
     company_name: "Starbucks",
@@ -385,34 +464,6 @@ const experiences = [
       "Workers demonstrate a moderate sense of responsibility, completing tasks reliably with occasional supervision.",
       "Workers take ownership of their responsibilities, showing initiative and reliability in their work.",
       "Workers exhibit a strong sense of responsibility, going above and beyond to ensure project success."
-    ],
-  },
-  {
-    title: "Worker Health",
-    company_name: "Starbucks",
-    icon: mobile,
-    iconBg: "#383E56",
-    Pearson_correlation: "Pearson correlation - 0.289",
-    Significance_two_tailed: "Significance (two-tailed) - 0.033",
-    options: ["Workers suffer from frequent health issues, leading to absenteeism and reduced productivity.",
-      "Workers have occasional health problems, requiring sick leave and medical attention.",
-      "Workers maintain average health, with minor ailments that do not significantly impact work.",
-      "Workers enjoy good health, with few or no medical issues affecting their performance.",
-      "Workers are in excellent health, maintaining peak physical and mental fitness for optimal productivity."
-    ],
-  },
-  {
-    title: "Worker Experience",
-    company_name: "Tesla",
-    icon: creator,
-    iconBg: "#E6DEDD",
-    Pearson_correlation: "Pearson correlation - 0.445",
-    Significance_two_tailed: "Significance (two-tailed) - 0.033",
-    options: ["Workers have minimal experience in their roles, with little knowledge of job tasks and procedures.",
-      "Workers have some experience, but they are still relatively new to their roles and require guidance.",
-      "Workers have moderate experience, having performed similar tasks for a few years with some proficiency.",
-      "Workers have extensive experience in their roles, with several years of practical experience and a deep understanding of job requirements.",
-      "Workers are highly experienced veterans, with decades of experience and a wealth of knowledge in their field."
     ],
   },
   {
@@ -561,19 +612,6 @@ const experiences = [
                          "Excellent work environment, providing a supportive, inspiring, and conducive setting for optimal productivity, creativity, and collaboration."],
   },
   {
-    title: "Crew Composition",
-    company_name: "Tesla",
-    icon: creator,
-    iconBg: "#E6DEDD",
-    Pearson_correlation: "Pearson correlation - 0.515",
-    Significance_two_tailed: "Significance (two-tailed) - 0.033",
-    options: ["Inadequate crew composition, with shortages of skilled workers, inexperienced personnel, or poor coordination among team members.",
-                         "Suboptimal crew composition, with a mismatch of skills, personalities, or roles within the team, leading to inefficiencies or conflicts.",
-                         "Balanced crew composition, with a diverse mix of skills, experience levels, and personalities that complement each other and support teamwork.",
-                         "Well-organized crew composition, with clearly defined roles, responsibilities, and leadership structures fostering effective collaboration and communication.",
-                         "Optimal crew composition, with a cohesive, highly skilled team that works synergistically to achieve project goals efficiently and effectively."],
-  },
-  {
     title: "Work Difficulty",
     company_name: "Shopify",
     icon: backend,
@@ -630,19 +668,6 @@ const experiences = [
         "Advanced management system, incorporating technology, data-driven decision-making, and continuous improvement initiatives for enhanced project management effectiveness.",
         "Best-in-class management system, leveraging cutting-edge practices, innovation, and adaptability to drive excellence in project management and achieve superior outcomes."
     ]
-  },
-  {
-    title: "Construction Plan",
-    company_name: "Meta",
-    icon: web,
-    iconBg: "#E6DEDD",
-    Pearson_correlation: "Pearson correlation - 0.388",
-    Significance_two_tailed: "Significance (two-tailed) - 0.033",
-    options: ["Inadequate or incomplete construction plan, lacking detailed specifications, timelines, or resource allocation.",
-                          "Basic construction plan in place, but with some gaps or ambiguities that require clarification or adjustment during execution.",
-                          "Well-developed construction plan, outlining clear objectives, milestones, and requirements to guide project implementation effectively.",
-                          "Comprehensive construction plan, incorporating thorough risk assessments, contingency plans, and stakeholder input for optimal project management.",
-                          "Exceptional construction plan, featuring meticulous planning, innovative strategies, and alignment with project goals to ensure success and efficiency."],
   },
   {
     title: "Design Documents",
@@ -751,19 +776,6 @@ const experiences = [
                         "Fairly consistent work continuity, with occasional challenges or setbacks that are promptly addressed to maintain project momentum and progress.",
                         "Good work continuity achieved, with stable workflow, efficient resource allocation, and proactive risk management ensuring steady progress towards project milestones.",
                         "Excellent work continuity maintained, with seamless coordination, adaptive strategies, and resilient operations that overcome obstacles and ensure uninterrupted progress."],
-  },
-  {
-    title: "Information Technology",
-    company_name: "Starbucks",
-    icon: mobile,
-    iconBg: "#383E56",
-    Pearson_correlation: "Pearson correlation - 0.604",
-    Significance_two_tailed: "Significance (two-tailed) - 0.033",
-    options: ["Limited or outdated IT infrastructure and systems, hindering communication, data management, and project coordination.",
-                               "Basic IT tools and technologies utilized, but with gaps or inefficiencies that impede workflow integration, collaboration, or decision-making.",
-                               "Adequate IT resources available, supporting essential functions such as document management, communication, and data analysis to facilitate project execution.",
-                               "Advanced IT solutions deployed, including project management software, BIM (Building Information Modeling), and IoT (Internet of Things) technologies for enhanced efficiency, transparency, and collaboration.",
-                               "Cutting-edge IT capabilities leveraged, with state-of-the-art digital platforms, AI (Artificial Intelligence), and cloud computing driving innovation, automation, and optimization across all aspects of the construction project."]
   },
 ];
 
