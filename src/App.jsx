@@ -10,22 +10,22 @@ const App = () => {
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
+          {/* <Navbar /> */}
           {/* <Hero /> */}
         </div>
-        <About />
-        <Experience />
+        {/* <About /> */}
+        {/* <Experience /> */}
         {/* <GenButton/> */}
-        <GenButton2/>
-        <AnalysisCharts/>
+        {/* <GenButton2/> */}
+        {/* <AnalysisCharts/> */}
         {/* <LineChart/> */}
         {/* <PieChart/> */}
         {/* <Tech /> */}
         {/* <Works /> */}
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
+          {/* <Contact /> */}
+          {/* <StarsCanvas /> */}
         </div>
       </div>
     </BrowserRouter>
