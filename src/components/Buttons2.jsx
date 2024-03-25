@@ -25,7 +25,8 @@ const Buttons2 = ({onSubmit}) => {
     // Calculate the estimate time based on both area and number of labours
     const estimateTime = (parseFloat(numLabours) * 0.78).toFixed(1);
     // Set the output with one decimal place
-    setOutput(`${estimateTime} Months`);
+    setOutput("Can't react the server");
+    // setOutput(`${estimateTime} Months`);
     onSubmit(); // Invoke the onSubmit callback
     console.log("I am submitted !!");
   };

@@ -35,10 +35,12 @@ const GenButton2 = () => {
     }))
   );
 
-  const [output, setOutput] = useState('0');
+  const [output, setOutput] = useState('');
+  // const [output, setOutput] = useState('0');
 
   const handleButtonClick = () => {
-    const randomProductivityValue = (50 + Math.random() * 30).toFixed(2);
+    // const randomProductivityValue = (50 + Math.random() * 30).toFixed(2);
+    const randomProductivityValue = "error 404 - Can't reach the server";
     setOutput(randomProductivityValue);
     productivityValues.forEach((productivity, index) => {
       setTimeout(() => {
@@ -67,7 +69,7 @@ const GenButton2 = () => {
             CLICK HERE TO GENERATE LABOUR PRODUCTIVITY
           </button>
         <div className="text-white bg-gray-800 py-2 px-4 rounded-lg shadow-md mx-96">
-          Labour Productivity Value : {output} / 100
+          Labour Productivity Value : <b> {output} </b> / 100
         </div>
         </div>
       </motion.div>
